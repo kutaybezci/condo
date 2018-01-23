@@ -1,6 +1,8 @@
 package com.kutaybezci.condo.bl.types;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 public class User {
 	private String userName;
@@ -11,6 +13,7 @@ public class User {
 	private String email;
 	private boolean active;
 	private Date birthDate;
+	private Set<Privilege> privileges = new HashSet<Privilege>();
 
 	public String getUserName() {
 		return userName;
@@ -75,4 +78,13 @@ public class User {
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
+
+	public Set<Privilege> getPrivileges() {
+		return privileges;
+	}
+
+	public void setPrivileges(Set<Privilege> privileges) {
+		this.privileges = privileges;
+	}
+
 }

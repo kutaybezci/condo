@@ -42,6 +42,7 @@ public class UserBoImpl implements UserBo {
 		if (user == null || !password.equals(user.getPassword())) {
 			throw new LoginFailed();
 		}
+
 		return user;
 	}
 
