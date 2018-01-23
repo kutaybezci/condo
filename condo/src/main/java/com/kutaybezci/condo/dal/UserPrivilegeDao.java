@@ -1,5 +1,11 @@
 package com.kutaybezci.condo.dal;
 
-public class UserPrivilegeDao {
+import java.util.List;
+
+import com.kutaybezci.condo.dal.model.UserPrivilegeEntity;
+
+public interface UserPrivilegeDao {
+
+	List<UserPrivilegeEntity> getUserPrivilege(long userId);
 
 }

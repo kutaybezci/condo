@@ -16,7 +16,6 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-
 	public UserEntity getUser(String userName) {
 		try {
 
